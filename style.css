@@ -79,6 +79,17 @@ button {
 #subTitle {
     float: right;
 }
+#Presentation p ul {
+    border: solid;
+    border-color: white;
+    background-color: white;
+    border-radius: 10px 0 0 0;
+    float: right;
+    margin: 10px 10px 10px 10px;
+    display: block;
+    
+
+}
 #socialMedia {
     float: right;
     display: inline-flex;
@@ -101,7 +112,25 @@ button {
     transform: translateX(-15%);
 }
 #Presentation {
-    display: block;
-    float: right;
+    border: solid;
+    border-color: white;
     background-color: white;
+    border-radius: 10px 0 0 0;
+    float: right;
+}
+#salad {
+    width: 60%;
+}
+#Start {
+    display: block;
+}
+#Start #welcome #title {
+    line-height: 2;
+}
+#courses {
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    margin-inline: 25px;
+    float: none;
 }
