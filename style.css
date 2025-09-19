@@ -64,20 +64,31 @@ button {
 }
 #welcome {
     float: right;
+    display: block;
     margin-right: 10%;
     font-size: 320%;
     transform: translateY(-80%);
+    padding-bottom: 4%;
+    padding-top: 14%;
 }
-
+#subTitle {
+    float: right;
+    display:block;
+    margin-right: 10%;
+    padding: 10px 10px 10px 10px;
+}
 #title {
     transform: translateY(-40%);
     transform: translateX(85%);
     float: right;
     margin-right: 10%;
     font-size: 350%;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 #subTitle {
     float: right;
+    padding: 10px 10px 10px 10px;
 }
 #Presentation p ul {
     border: solid;
@@ -104,6 +115,7 @@ button {
     margin-inline: 30px;
     text-decoration: none;
     color: #706e6e;
+    display: flex;
     
 
 }
@@ -117,9 +129,9 @@ button {
     background-color: white;
     border-radius: 10px 0 0 0;
     float: right;
-}
-#salad {
-    width: 60%;
+    padding: 10px;
+    display: flexbox;
+    
 }
 #Start {
     display: block;
@@ -131,6 +143,46 @@ button {
     justify-content: center;
     display: inline-flex;
     align-items: center;
-    margin-inline: 25px;
+    margin-inline: 30px;
     float: none;
+    text-decoration: none;
+}
+#courses a {
+    text-decoration: none;
+    color: black;
+}
+#courses li {
+    margin-inline: 50px;
+    text-decoration: none;
+    align-items: center;
+    display: flexbox;
+    margin: 20px;
+    border: solid;
+    border-radius: 15%;
+    padding: 10px;
+    cursor: pointer;
+}
+#courses li:hover {
+    color: rgb(212, 206, 206);
+}
+#CompanysValues {
+    margin-left: 10px;
+    float: left;
+    padding: 10px;
+    bottom: 4%;
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-start;
+}
+#message {
+    float: right;
+    font-size: larger;
+    margin-right: 10px;
+    text-align: right;
+    transform: translateX(10%);
+    display: flex;
+
+}
+#start {
+    float: right;
 }
