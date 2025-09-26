@@ -70,26 +70,25 @@ button {
     transform: translateY(-80%);
     padding-bottom: 4%;
     padding-top: 14%;
+    text-align: left;
 }
 #subTitle {
     float: right;
     display:block;
     margin-right: 10%;
     padding: 10px 10px 10px 10px;
+    text-align: left;
 }
 #title {
     transform: translateY(-40%);
     transform: translateX(85%);
     float: right;
     margin-right: 10%;
-    font-size: 350%;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    font-size: 250%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
-#subTitle {
-    float: right;
-    padding: 10px 10px 10px 10px;
-}
+
 #Presentation p ul {
     border: solid;
     border-color: white;
@@ -140,27 +139,24 @@ button {
     line-height: 2;
 }
 #courses {
-    justify-content: center;
+    justify-content: space-between;
     display: inline-flex;
+    align-items: center;
+}
+#courses li {
+    justify-content: center;
+    display: inline-block;
     align-items: center;
     margin-inline: 30px;
     float: none;
     text-decoration: none;
+    border: solid black;
+    padding: 10px;
+    border-radius: 10px;
 }
 #courses a {
     text-decoration: none;
     color: black;
-}
-#courses li {
-    margin-inline: 50px;
-    text-decoration: none;
-    align-items: center;
-    display: flexbox;
-    margin: 20px;
-    border: solid;
-    border-radius: 15%;
-    padding: 10px;
-    cursor: pointer;
 }
 #courses li:hover {
     color: rgb(212, 206, 206);
@@ -173,6 +169,12 @@ button {
     align-items: flex-end;
     display: flex;
     justify-content: flex-start;
+    text-decoration: none;
+}
+#CompanysValues li {
+    list-style-type: none;
+    float: left;
+    
 }
 #message {
     float: right;
