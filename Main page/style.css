@@ -242,7 +242,21 @@ body {
     display: block;
 }
 
-
+.newsletter {
+    float: none;
+    align-items: center;
+    display: grid;
+    background-color: rgb(12, 40, 12);
+    position: absolute;
+    padding: 10 10 10 10;
+    grid-template-columns: 1fr;
+}
+.formEmail {
+    float: none;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
 @media (min-width: 700px) {
   .Start { padding:28px; }
   .logo { width:120px; }
