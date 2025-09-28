@@ -7,21 +7,35 @@ let intervalId = null;
 document.addEventListener("DOMContentLoaded", initializeSlider)
 
 function initializeSlider() {
-  if(slides < 0){
-     slides[slideIndex].classList.add("displaySlide");
-     setInterval(nextSlide, 5000);
+  if(slides === 0) return; {
+     showSlides(slideIndex);
+     intervalId = setInterval(() => nextSlide(false), INTERVAL_MS)
 }
 }
 function showSlides(index) {
- slides.forEach(slide => {
-    slide.classList.remove("displaySlide");
- });
- slides[slideIndex].classList.add("displaySlide");
-}
-function prevSlide() {
+    if(index >= slides.length) {
+        slideIndex = 0;
+    }
+    else if(index < 0) {
+         slideIndex = slides.length -1;
+    }
+    
+    SlideIndex = index;
+    slides.forEach(s => s.classList.remove("displaySlide"));
+    slides[slideIndex].classList.add("displaySlide");
+ };
 
+function prevSlide(manual = true) {
+   clearInterval(intervalId);
+   slideIndex--;
+   showSlides(slideIndex)
 }
-function nextSlide() {
+function nextSlide(manual = true) {
+   clearInterval(intervalId);
    slideIndex++;
    showSlides(slideIndex)
+}
+function restartInterval() {
+  if (intervalId) clearInterval(intervalId);
+  intervalId = setInterval(() => nextSlide(false), INTERVAL_MS);
 }

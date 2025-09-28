@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Inter";
+  src: url(/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: black;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* main links */
+.option {
+  margin-top: 15px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.option:focus { outline: 3px solid rgba(6,122,6,.18); outline-offset:4px; }
+
+/* parent that contains dropdown */
+.has-sub { position: relative; }
+
+/* dropdown box (hidden by default) */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  padding: 6px 0;
+  display: none;
+  z-index: 1000;
+}
+
+/* dropdown items */
+.dropdown li { list-style: none; margin: 0; }
+.dropdown-link {
+  display: block;
+  padding: 20px 30px;
+  color: #222;
+  text-decoration: none;
+}
+.dropdown-link:hover,
+.dropdown-link:focus { background: #f3f3f3; }
+
+/* show dropdown on hover or keyboard focus */
+.has-sub:hover > .dropdown,
+.has-sub:focus-within > .dropdown,
+.has-sub.open > .dropdown { display: block; }
+
+/* small-screen adjustments */
+@media (max-width: 720px) {
+  .nav-list { flex-direction: column; gap: 6px; align-items: stretch; }
+  .dropdown { position: static; box-shadow: none; display: none; }
+  .has-sub.open > .dropdown { display: block; }
+  .dropdown-link { padding-left: 28px; }
+}
+
+/*Form */
+
+h1 {
+ align-items: center;
+  margin-left: 500px;
+}
+.register {
+  width: 50px;
+  margin-top: 40px;
+  margin-left: 150px;
+  position: absolute;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+}
+span {
+  color: red;
+}
+.title {
+  display: inline;
+}
+input {
+  padding: 20px;
+  border: none;
+  border-bottom: solid;
+  
+}
+.message {
+  text-align: left;
+}
+.register .label .input {
+  margin-top: 30px;
+}
+.submit {
+  background-color: rgb(5, 74, 5);
+  color: white;
+  padding: 10px;
+  margin-top: 12px;
+  border-radius: 5px;
+  font-size: larger;
+}
+.phone {
+  float: right;
+  align-items: end;
+  justify-items: end;
+  margin-right: 30px;
+}
