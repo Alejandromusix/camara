@@ -125,7 +125,11 @@ body {
     text-decoration: none;
     border: groove black;
     border-radius: 10px;
+    transition: padding 1s;
     
+}
+.card:hover {
+    padding: 15px;
 }
 .headlines {
     display: inline;
@@ -195,6 +199,10 @@ body {
     color: rgb(75, 70, 70);
     padding: 10px;
     font-size: 27px;
+    transition: font-size 1s;
+}
+.socialMedia a:hover {
+    font-size: 31px;
 }
 .socialMedia {
     list-style-type: none;
@@ -237,25 +245,89 @@ body {
 .image-slider .slide-image {
     width: 100%;
     display: none;
+    object-fit: cover;
+    height: auto;
 }
+@media (max-width: 699px) {
+  .prev, .next {
+    font-size: 30px;
+    padding: 10px;
+  }
+}
+
 .slide-image.displaySlide{
     display: block;
 }
 
-.newsletter {
-    float: none;
-    align-items: center;
-    display: grid;
-    background-color: rgb(12, 40, 12);
-    position: absolute;
-    padding: 10 10 10 10;
-    grid-template-columns: 1fr;
+.newsletter .formEmail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  border: #000 solid;
+  border-radius: 10px;
 }
+
 .formEmail {
     float: none;
+    position: relative;
+}
+.text {
+    text-align: start;
+}
+.email {
+    border: none;
+    border-bottom: solid black;
+    padding: 25px;
+    background: none;
+    font-size: large;
+}
+.submitEmail {
+    padding: 15px;
+    background-color: #e6efb6a5;
+    font-size: larger;
+    font-family: 'intel';
+    border-radius: 5px;
+    transition: color 1s, background-color 1s, padding 1s;
+}
+.submitEmail:hover {
+    background-color: #d3d12a;
+    color: rgb(48, 47, 47);
+    padding: 20px;
+}
+
+.down-logo {
+    width: 400px;
+    float: left;
+}
+.footer {
+    display: flex;
+    background-color: #0e3509;
+    color: white;
+    margin: 0;
+    padding: 0;
     align-items: center;
-    display: grid;
-    grid-template-columns: 1fr;
+}
+.footer h2 {
+    padding: 10px;
+    font-size: 30px;
+    
+}
+.footer h2, p, article {
+    margin: 15px;
+}
+.down-logo {
+    position: relative;
+    float: left;
+}
+.phone {
+    text-decoration: none;
+    color: white;
+}
+.line {
+   size: 1cm;
 }
 @media (min-width: 700px) {
   .Start { padding:28px; }
@@ -275,4 +347,50 @@ body {
   .logo { width:140px; }
   .cards { gap:24px; max-width:1200px; margin:0 auto; }
   }
-  
+  @media (max-width: 699px) {
+  .Start {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero-text {
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .card {
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .CompanysValues {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .down-logo {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .newsletter .formEmail {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    left: 0;
+  }
+}

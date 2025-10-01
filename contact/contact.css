@@ -97,6 +97,7 @@ h1 {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
+  font-size: larger;
 }
 span {
   color: red;
@@ -108,8 +109,10 @@ input {
   padding: 20px;
   border: none;
   border-bottom: solid;
+  font-family: "Inter";
   
 }
+
 .message {
   text-align: left;
 }
@@ -123,6 +126,12 @@ input {
   margin-top: 12px;
   border-radius: 5px;
   font-size: larger;
+  transition: padding 1s , background-color 1s;
+}
+.submit:hover {
+  background-color: #cbbf0c;
+  padding: 15px;
+  
 }
 .phone {
   float: right;
