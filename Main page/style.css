@@ -303,6 +303,7 @@ body {
     float: left;
 }
 .footer {
+    border-top: solid rgb(221, 232, 12) 5px;
     display: flex;
     background-color: #0e3509;
     color: white;

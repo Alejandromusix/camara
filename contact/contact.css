@@ -92,13 +92,15 @@ h1 {
   width: 50px;
   margin-top: 40px;
   margin-left: 150px;
-  position: absolute;
+  position: relative;
   align-items: center;
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
   font-size: larger;
+  margin-bottom: 20px;
 }
+
 span {
   color: red;
 }
@@ -127,15 +129,69 @@ input {
   border-radius: 5px;
   font-size: larger;
   transition: padding 1s , background-color 1s;
+  font-family: Inter;
 }
 .submit:hover {
   background-color: #cbbf0c;
   padding: 15px;
   
 }
+
+.contact {
+  float: none;
+  position: relative;
+}
+.footerText {
+  margin: 10px;
+}
+.down-logo {
+  width: 400px;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  float: left
+}
+.footer {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  background-color: #0e3509;
+  color: white;
+}
+
 .phone {
-  float: right;
-  align-items: end;
-  justify-items: end;
-  margin-right: 30px;
+    text-decoration: none;
+    color: white;
+
+}
+
+@media (max-width: 720px) {
+  .option {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .register {
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .down-logo {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 699px) {
+  .prev, .next {
+    font-size: 30px;
+    padding: 10px;
+  }
 }
