@@ -123,7 +123,7 @@ body {
     margin-left: 70px;
     color: #222;
     text-decoration: none;
-    border: groove black;
+    border: solid black;
     border-radius: 10px;
     transition: padding 1s;
     
@@ -161,7 +161,27 @@ body {
 .card-image {
     width: 200px;
     border-radius: 15px;
+    
 }
+@media (max-width: 768px) {
+  .card {
+    align-items: center;
+    flex: 1 1 100%;
+    max-width: 90%;
+    margin: 10px auto;
+  }
+  .headlines {
+    left: -3px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-image {
+    width: 150px;
+  }
+}
+
 .info {
     display: grid;
     gap: 18px;
@@ -256,7 +276,12 @@ body {
 }
 
 .slide-image.displaySlide{
-    display: block;
+    display: flex;
+}
+.slide-image {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
 }
 
 .newsletter .formEmail {
@@ -330,7 +355,8 @@ body {
 .line {
    size: 1cm;
 }
-@media (min-width: 700px) {
+
+ @media (min-width: 700px) {
   .Start { padding:28px; }
   .logo { width:120px; }
   .title { font-size:32px; }

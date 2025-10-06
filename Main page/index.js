@@ -39,3 +39,4 @@ function restartInterval() {
   if (intervalId) clearInterval(intervalId);
   intervalId = setInterval(() => nextSlide(false), INTERVAL_MS);
 }
+
