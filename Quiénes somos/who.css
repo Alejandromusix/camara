@@ -114,6 +114,9 @@ h1 {
 h1, h2 {
     color: rgb(206, 176, 6);
 }
+.contain-block .block-item2 {
+    margin-top: 30px;
+}
 .text1 {
     text-align: center;
     align-items: center;
@@ -126,6 +129,52 @@ h1, h2 {
     border-radius: 15px;
     padding: 30px;
 }
+.blocks .contain-block {
+    float: none;
+    position: relative;
+}
+.blocks .contain-block li {
+    margin: 10px;
+    list-style-type: none;
+    float: none;
+    position: relative;
+    margin-top: 1%;
+}
+.block-item1 .mission-image {
+   width: 50%; 
+   float: inline-end;
+   border-radius: 10px;
+   margin: 10px;
+}
+.blocks .block-item1 .mission-text {
+    font-size: 19px;
+    width: 480px;
+    margin-bottom: 120px;
+    margin-top: 100px;
+    bottom: 10px;
+}
+.block-item1 .block-item2{
+    margin-bottom: 10%;
+}
+.block-item2 .vision-image {
+   width: 50%; 
+   float: inline-start;
+   border-radius: 10px;
+   margin: 10px;
+   margin-bottom: 5%;
+}
+.block-item2 .block-text .vision-text {
+    width: 500px;
+    float: inline-end;
+    text-align: left;
+    margin: 10px;
+}
+.block-item2 .vision-text {
+    font-size: 19px;
+    width: 500px;
+    margin: 10px;
+
+}
 .first {
     background-color: rgb(185, 159, 11);
     margin: 0;
@@ -136,68 +185,11 @@ h1, h2 {
 .text , .preTitle {
     font-size: 19px;
 }
-li {
+.item {
     font-size: 18px;
     margin-top: 8px;
 }
-.header-mission {
-    margin-left: 50px;
-    font-size: 30px;
-}
-.mission-text {
-    float: left;
-    margin-left: 30px;
-    font-size: 19px;
-    text-align: left;
-    display: flex;
 
-}
-.mission-image {
-    margin-right: 30px;
-    float: right;
-    width: 450px;
-    border: solid #f3e631 5px;
-    border-radius: 10px;
-    margin-top: 8px;
-}
-.header-vision {
-    margin-right: 110px;
-    font-size: 30px;
-    margin-top: 20px;
-    right: 10px;
-}
-.vision-text {
-    display: flex;
-    float: right;
-    margin: 10px;
-    margin-right: 18px;
-    font-size: 19px;
-    text-align: left;
-}
-.vision-image {
-    float: left;
-    margin-top: 130px;
-    margin-left: 30px;
-    margin-right: 10px;
-    display: flex;
-    width: 450px;
-    border: solid #f3e631 5px;
-    border-radius: 10px;
-}
-.block-text {
-    display: block;
-    float: right;
-}
-.mision .header-mission {
-    float: right;
-    display: flex;
-   
-}
-.blocks {
-    position: absolute;
-    display: block;
-    margin-bottom: 20px;
-}
 .lastP {
     margin: 25px;
 }
@@ -208,7 +200,7 @@ li {
     color: white;
     margin: 0;
     padding: 0;
-    margin-top: 50%;
+    margin-top: 40%;
     gap: 10px;
     align-items: center;
     flex-wrap: wrap;
@@ -235,4 +227,48 @@ li {
 .down-logo {
     width: 400px;
     float: left;
+}
+
+.container .card-item .card-list {
+    align-content: center;
+    align-items: center;
+    display: block;
+    justify-content: center;
+}
+.card-list .card-item {
+    margin: 10px;
+    width: 400px;
+    display: block;
+    background-color: goldenrod;
+    padding: 18px;
+    border-radius: 12px;
+    list-style-type: none;
+    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.05);
+}
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  display: block;
+  z-index: 10;
+}
+
+.card-list .card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-list .card-title {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: gold;
+}
+.card-list .card-button {
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    border: none;
+    margin: 30px 0 5px;
+    background-color: rgb(48, 50, 6);
+    color: white;
+    cursor: pointer;
 }
