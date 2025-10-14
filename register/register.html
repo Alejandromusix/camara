@@ -44,7 +44,7 @@
 </nav>
 <main>
   <section class="explanation">
-    <h1>¿Cómo afiliarte a nosotros?</h2>
+    <h1 class="title">¿Cómo afiliarte a nosotros?</h2>
       <hr>
       <p>&nbsp; Si quieres hacer que tu negocio forme parte de nuestra cámara gastronómica
         debes llenar el formulario que se presenta a continuación: <br>
@@ -56,14 +56,7 @@
             <li><a href="">Binance</a></li>
             <li><a href="">Zinli</a></li>
             <li><a href="">Pago móvil</a></li>
-            <li>Transferencia bancaria</li>
-            <ul class="data">
-              <li>65754368900</li>
-              <li>Banesco</li>
-              <li>CI:65424689</li>
             </ul>
-          </ul>
-          
         </p>
       </p>
   </section>
@@ -77,23 +70,52 @@
     <label for="email">Correo electrónico personal</label>
     <input type="email" name="email" class="requirement" required placeholder="Email@gmail.com">
 
-    <label for="nacimiento">Fecha de nacimiento</label>
+    <label for="nacimiento">Fecha creación del negocio</label>
     <input type="date" name="nacimiento" class="requirement" required>
 
     <label for="negocio">Nombre del negocio</label>
     <input type="text" name="negocio" class="requirement">
 
-    <label for="rif" class="file">Rif del negocio <span>Png/</span></label>
+    <label for="rif" class="file">Rif del negocio <span>(Png/Jpeg)</span></label>
     <input type="file" id="rif" name="rif" class="fileInput" accept="image/png, image/jpeg" required>
 
-    <label for="Pago" class="file">Comprobante de pago</label>
+    <label for="Pago" class="file">Comprobante de pago <span>(Png/Jpeg)</span></label>
     <input type="file" id="Pago" name="Pago" class="fileInput" required accept="image/png, image/jpeg">
 
-    <button type="submit" class="send">Enviar</button>
-    <br>
+    <button type="submit" class="send" id="send" onclick="openPopup()">Enviar</button>
+    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+
+    <div class="modal">
+     <div class="modal-inner" id="modal-inner">
+      <h2>¡Afiliación completada!</h2>
+      <p>Nos pondremos en contacto contigo dentro de poco. <br>
+        Gracias por querer formar parte de nuestra cámara.
+      </p>
+      <button type="button" class="close-modal" onclick="closePopup()">Ok</button>
+     </div>
   </form>
   </section>
 </main>
+<footer class="footer">
+
+      <article class="footerText">
+        <h2>Cámara Gastronómica</h2>
+        <div>
+          <p class="adress">
+            Dirección: <br>
+            Altamira 23 <br>
+            Caracas, Distrito Capital <br>
+            Venezuela <br>
+          </p>
+          <a href="tel:" class="phone"><i class="fa-solid fa-phone" style="color: #000000;"></i> 0412-222-222</a>
+        </div>
+      </article>
+      <br>
+      
+      <img src="/ChefImages/LOGO COMPLETO -03.png" alt="" class="down-logo">
+      <p class="footerText">&copy; <span id="year"></span> Cámara Gastronómica. Todos los derechos reservados</p>
+    </footer>
+
 <script src="/register/register.css"></script>
 </body>
 </html>

@@ -95,21 +95,35 @@ body {
   .has-sub.open > .dropdown { display: block; }
   .dropdown-link { padding-left: 28px; }
 }
+h1 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  margin: 40px;
+}
 .form {
   background-color: gold;
+  border-top: solid #000;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  padding-bottom: 15px;
 }
 form {
   align-items: center;
-  justify-content: center;
-  margin-left: 580px;
-  display: grid;
+  text-align: center;
+  justify-items: center;
+  display: flex;
   grid-template-columns: 1fr;
-  width: 60px;
+  width: 450px;
   background-color: gold;
-  
+  flex-direction: column;
   
 }
 input {
+ 
   margin-bottom: 20px;
   background: none;
   border: none;
@@ -127,8 +141,107 @@ input {
   border-bottom: solid black;
   cursor: pointer;
   transition: background-color 0.5s, border 0.5s;
+  margin-bottom: 10px;
 }
 .file:hover {
   background-color: green;
   border: solid gold;
+}
+.form .send {
+   background-color: #f3f3f3;
+   border-radius: 10px;
+   padding: 15px;
+   cursor: pointer;
+   font-family: "intel", Helvetica;
+   font-size: 15px;
+   border: none;
+   transition: border 0.5s, background-color 1s;
+
+}
+.form .send:hover {
+  border: solid 2px green;
+  background-color: gold;
+}
+form span {
+  color: red;
+}
+.explanation {
+  margin: 10px;
+}
+.explanation .methods a {
+  text-decoration: none;
+  color: black;
+}
+.down-logo {
+    width: 400px;
+    float: left;
+}
+.footer {
+    border-top: solid rgb(0, 0, 0) 2px;
+    display: flex;
+    background-color: #0e3509;
+    color: white;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.footer h2 {
+    padding: 10px;
+    font-size: 30px;
+    
+}
+.footer h2, p, article {
+    margin: 15px;
+}
+.down-logo {
+    position: relative;
+    float: left;
+}
+.phone {
+    text-decoration: none;
+    color: white;
+}
+.modal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-inner {
+  width: 400px;
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  visibility: hidden;
+  transition: transform 0.5s, top 0.5s;
+}
+.openPopup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-inner h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.modal-inner button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-family: "intel";
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: gold;
+}
+.modal.open {
+  opacity: 1;
+  z-index: 999;
 }
