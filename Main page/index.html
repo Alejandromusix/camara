@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/Main page/style.css">
     <link rel="icon" href="/ChefImages/CÁMARA GASTRONÓMICA DE CARACAS MIRANDA-03.png">
     <script src="https://kit.fontawesome.com/e11074fe4c.js" crossorigin="anonymous"></script>
+    <!-- Swipe CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <nav class="main-nav" aria-label="Main navigation">
@@ -17,7 +19,6 @@
       <a href="#" class="option" aria-haspopup="true" aria-expanded="false">CGCM<img src="/ChefImages/arrow_drop_down_27dp_000000_FILL0_wght400_GRAD0_opsz24.png" class="icon" alt=""></a>
       <ul class="dropdown">
         <li><a href="/Quiénes somos/who.html" class="dropdown-link">¿Quiénes somos?</a></li>
-        <li><a href="#" class="dropdown-link">Nuestro equipo</a></li>
         <li><a href="#" class="dropdown-link">Responsabilidad social</a></li>
       </ul>
     </li>
@@ -26,7 +27,6 @@
       <a href="#" class="option" aria-haspopup="true" aria-expanded="false">Servicios<img src="/ChefImages/arrow_drop_down_27dp_000000_FILL0_wght400_GRAD0_opsz24.png" class="icon" alt=""></a>
       <ul class="dropdown">
         <li><a href="#" class="dropdown-link">Cursos</a></li>
-        <li><a href="#" class="dropdown-link">Ayuda al emprendedor</a></li>
         <li><a href="/register/register.html" class="dropdown-link">Afíliate a la Cámara</a></li>
       </ul>
     </li>
@@ -55,20 +55,20 @@
         </div>
     </header>
     <main>
-        <div class="image-slider">
-            <article class="slide">
-                <img src="/ChefImages/coffee.jpg" alt="" class="slide-image">
-            </article>
-            <article class="slide">
-                <img src="/ChefImages/table.jpg" alt="" class="slide-image">
-            </article>
-            <article class="slide">
-                <img src="/ChefImages/pizza-6478478_1280.jpg" alt="" class="slide-image">
-            </article>
-            <button class="prev" onclick="prevSlide()">&#10094;</button>
-            <button class="next" onclick="nextSlide()">&#10095;</button>
-        </div>
+        <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="/ChefImages/blueberries-9450130_1280.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="/ChefImages/coffee.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="/ChefImages/pizza-6478478_1280.jpg" alt=""></div>
+  </div>
 
+  <!-- If we need navigation buttons -->
+  <div class="prev swiper-button-prev" style="color: gold;"></div>
+  <div class="next swiper-button-next" style="color: gold;"></div>
+
+</div>
     <section class="cards" aria-label="Servicios y eventos">
 
         <article class="card">
@@ -105,12 +105,12 @@
     </section>
     <br>
 <div class="newsletter">
-    <form action="post" class="formEmail">
+    <form action="https://formsubmit.co/vicepresidenciacgcm@gmail.com" class="formEmail" method="post">
       <i class="fa-solid fa-newspaper" id="newspaper" style="color: #000000; font-size: 45px;"></i>
       <h2>¡Regístrate en nuestro boletín informativo <br>
       y sé el primero en recibir todas<br>nuestras noticias y actualizaciones!</h2>
       <label for="email" class="text">Correo electrónico</label><br>
-      <input type="email" placeholder="example@gmail.com" required class="email"><br>
+      <input type="email" name="email" placeholder="example@gmail.com" required class="email"><br>
       <br>
       <button type="submit" class="submitEmail">Suscribirse</button>
 
@@ -171,7 +171,9 @@
       <img src="/ChefImages/LOGO COMPLETO -03.png" alt="" class="down-logo">
       <p class="footerText">&copy; <span id="year"></span> Cámara Gastronómica. Todos los derechos reservados</p>
     </footer>
-
+    
+    <!--Swipe Js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/Main page/index.js"></script>
 </body>
 </html>

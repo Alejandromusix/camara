@@ -147,3 +147,32 @@ body {
 .qya .question.open > .icon {
     transform: rotate(45deg);
 }
+.down-logo {
+    width: 400px;
+    float: left;
+}
+.footer {
+    border-top: solid rgb(0, 0, 0) 2px;
+    display: flex;
+    background-color: #0e3509;
+    color: white;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.footer h2 {
+    padding: 10px;
+    font-size: 30px;
+    
+}
+.footer h2, p, article {
+    margin: 15px;
+}
+.down-logo {
+    position: relative;
+    float: left;
+}
+.phone {
+    text-decoration: none;
+    color: white;
+}
