@@ -152,7 +152,7 @@ body {
     float: left;
 }
 .footer {
-    border-top: solid rgb(0, 0, 0) 2px;
+    border-top: solid #d5d209 5px;
     display: flex;
     background-color: #0e3509;
     color: white;
