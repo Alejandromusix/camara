@@ -199,3 +199,15 @@ form span {
     text-decoration: none;
     color: white;
 }
+@media (max-width: 699px) {
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .down-logo {
+    width: 80%;
+    margin: 0 auto;
+  }
+  }
