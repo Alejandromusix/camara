@@ -85,20 +85,31 @@ body {
 /*Form */
 
 h1 {
- align-items: center;
-  margin-left: 500px;
+ text-align: center;
+ font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin: 1.5rem;
 }
 .register {
-  width: 50px;
-  margin-top: 40px;
-  margin-left: 150px;
+  width: 500px;
   position: relative;
+  padding: 30px;
+  background-color: white;
   align-items: center;
   display: grid;
+  align-content: center;
   justify-content: center;
-  grid-template-columns: 1fr;
+  text-align: left;
   font-size: larger;
+  margin: 0 auto;
   margin-bottom: 20px;
+  border: solid black 2px;
+  border-radius: 5px;
+}
+.contact {
+  background-color: #cbbf0c;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border: solid #000;
 }
 
 span {
@@ -115,9 +126,6 @@ input {
   
 }
 
-.message {
-  text-align: left;
-}
 .register .label .input {
   margin-top: 30px;
 }
@@ -137,10 +145,6 @@ input {
   
 }
 
-.contact {
-  float: none;
-  position: relative;
-}
 .footerText {
   margin: 10px;
 }
@@ -160,6 +164,7 @@ input {
   background-color: #0e3509;
   color: white;
   border-top: solid #d5d209 5px;
+  position: relative;
 }
 
 .phone {
@@ -170,12 +175,17 @@ input {
 
 @media (max-width: 720px) {
   .option {
-    font-size: 20px;
+    font-size: 15px;
     padding: 8px;
   }
-
+  h1 {
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    margin: 10px;
+  }
   .register {
-    width: 90%;
+    width: 80%;
     margin: 20px auto;
     padding: 10px;
   }
@@ -190,9 +200,50 @@ input {
     margin: 0 auto;
   }
 }
-@media (max-width: 699px) {
-  .prev, .next {
-    font-size: 30px;
-    padding: 10px;
+.contact-wrapper {
+  display: flex;
+  flex-direction: column; /* Default: stacked on mobile */
+  gap: 1rem;
+  background-color: #cbbf0c;
+}
+.contact,
+.other-contact {
+  border-radius: 8px;
+}
+.other-contact {
+  width: 100%;
+  margin: 25px auto;
+  padding: 30px;
+  max-width: 300px;
+  height: auto;
+  text-align: left;
+  background-color: #dcd572;
+  color: black;
+  font-size: large;
+}
+.other-contact a {
+  text-decoration: none;
+  color: black;
+}
+.other-contact iframe {
+  width: 100%;
+  height: 150%;
+  flex: 50%;
+  margin-top: 10px;
+  border-radius: 5px;
+  
+}
+@media (min-width: 768px) {
+  .contact-wrapper {
+    flex-direction: row; /* Side by side on desktop */
+    align-items: flex-start;
+  }
+
+  .contact {
+    flex: 2;
+  }
+
+  .other-contact {
+    flex: 1;
   }
 }

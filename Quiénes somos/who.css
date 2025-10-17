@@ -139,10 +139,10 @@ h1, h2 {
     text-align: center;
     align-items: center;
     display: block;
-    width: 350px;
+    width: 500px;
     color: black;
+    margin: 0 auto;
     background-color: white;
-    margin-left: 430px;
     border: solid;
     border-radius: 15px;
     padding: 30px;
@@ -246,7 +246,18 @@ h1, h2 {
     width: 400px;
     float: left;
 }
+@media (max-width: 699px) {
 
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .down-logo {
+    width: 80%;
+    margin: 0 auto;
+  }
+  }
 .swiper {
   width: 100%;
   max-width: 1000px;
