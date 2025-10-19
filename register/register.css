@@ -103,22 +103,20 @@ h1 {
   display: flex;
   margin: 40px;
 }
-.form {
-  background-color: gold;
-  border-top: solid #000;
-  justify-content: center;
-  text-align: center;
-  justify-items: center;
-}
+
 form {
   align-items: center;
   text-align: center;
   justify-items: center;
   display: flex;
   grid-template-columns: 1fr;
-  width: 450px;
+  width: 100%;
   background-color: gold;
   flex-direction: column;
+  border: solid #000;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
   
 }
 input {
