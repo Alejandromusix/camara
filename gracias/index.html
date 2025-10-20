@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gracias por registrarte - CGCM">
+    <title>¡Gracias! - CGCM</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D2B25',
+                        secondary: '#2E4F46',
+                        accent: '#C6A15B',
+                        'accent-light': '#D4B578',
+                        sand: '#F3F0EB',
+                        'gray-olive': '#9BA39C',
+                        'gray-charcoal': '#1E1E1E'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-sand min-h-screen flex items-center justify-center relative overflow-hidden">
+
+    <!-- Background decoration -->
+    <div class="absolute inset-0 opacity-5">
+        <div class="absolute top-10 left-10 w-64 h-64 bg-accent rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-20 relative z-10">
+        <div class="max-w-2xl mx-auto text-center">
+
+            <!-- Success Icon -->
+            <div class="mb-8" data-aos="zoom-in" data-aos-duration="800">
+                <div class="w-32 h-32 mx-auto bg-gradient-to-br from-accent to-accent-light rounded-full flex items-center justify-center shadow-2xl">
+                    <i class="fas fa-check text-white text-6xl"></i>
+                </div>
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6" data-aos="fade-up" data-aos-delay="200">
+                ¡Gracias por registrarte!
+            </h1>
+
+            <!-- Message -->
+            <div class="mb-10" data-aos="fade-up" data-aos-delay="400">
+                <p class="text-2xl md:text-3xl text-accent font-semibold mb-4">
+                    ¡Muchas gracias por registrarte!
+                </p>
+                <p class="text-xl text-gray-olive">
+                    Nos pondremos en contacto contigo dentro de poco
+                </p>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="bg-white rounded-2xl p-8 shadow-xl mb-10" data-aos="fade-up" data-aos-delay="600">
+                <h2 class="text-2xl font-bold text-primary mb-4">¿Qué sigue?</h2>
+                <div class="space-y-4 text-left">
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                            <i class="fas fa-envelope text-accent"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-primary mb-1">1. Revisión de Documentos</h3>
+                            <p class="text-gray-olive">Nuestro equipo revisará tu solicitud y documentos en las próximas 24-48 horas.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                            <i class="fas fa-phone text-accent"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-primary mb-1">2. Contacto</h3>
+                            <p class="text-gray-olive">Te contactaremos por correo electrónico o teléfono para confirmar tu afiliación.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                            <i class="fas fa-handshake text-accent"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-primary mb-1">3. Bienvenida</h3>
+                            <p class="text-gray-olive">Recibirás tu kit de bienvenida con toda la información sobre beneficios y servicios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div data-aos="fade-up" data-aos-delay="800">
+                <a href="../index.html" class="inline-block bg-accent text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-accent-light transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+                    <i class="fas fa-home mr-2"></i>
+                    Regresar a la página principal
+                </a>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="mt-12 pt-8 border-t border-gray-olive/30" data-aos="fade-up" data-aos-delay="1000">
+                <p class="text-gray-olive mb-4">¿Tienes alguna pregunta?</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-6 text-sm">
+                    <a href="mailto:vicepresidenciacgcm@gmail.com" class="text-accent hover:text-accent-light font-semibold transition-colors">
+                        <i class="fas fa-envelope mr-2"></i>
+                        vicepresidenciacgcm@gmail.com
+                    </a>
+                    <a href="tel:+584122222222" class="text-accent hover:text-accent-light font-semibold transition-colors">
+                        <i class="fas fa-phone mr-2"></i>
+                        +58 412-222-222
+                    </a>
+                </div>
+            </div>
+
+            <!-- Logo -->
+            <div class="mt-12" data-aos="fade-up" data-aos-delay="1200">
+                <img src="../images/logo-completo-03.png" alt="CGCM Logo" class="mx-auto w-48 opacity-50">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out'
+        });
+
+        // Confetti animation (optional enhancement)
+        window.addEventListener('load', function() {
+            // Add subtle confetti effect on load
+            const colors = ['#C6A15B', '#D4B578', '#0D2B25'];
+
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    createConfetti();
+                }, i * 30);
+            }
+
+            function createConfetti() {
+                const confetti = document.createElement('div');
+                confetti.style.position = 'fixed';
+                confetti.style.width = '10px';
+                confetti.style.height = '10px';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = Math.random() * window.innerWidth + 'px';
+                confetti.style.top = '-10px';
+                confetti.style.opacity = '0.7';
+                confetti.style.borderRadius = '50%';
+                confetti.style.pointerEvents = 'none';
+                confetti.style.zIndex = '9999';
+                document.body.appendChild(confetti);
+
+                const fall = confetti.animate([
+                    { transform: 'translateY(0) rotate(0deg)', opacity: 0.7 },
+                    { transform: `translateY(${window.innerHeight + 10}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+                ], {
+                    duration: Math.random() * 3000 + 2000,
+                    easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+                });
+
+                fall.onfinish = () => {
+                    confetti.remove();
+                };
+            }
+        });
+    </script>
+</body>
+</html>

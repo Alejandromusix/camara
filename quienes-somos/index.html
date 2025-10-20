@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce quiénes somos - Cámara Gastronómica de Caracas Miranda">
+    <title>Quiénes Somos - CGCM</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D2B25',
+                        secondary: '#2E4F46',
+                        accent: '#C6A15B',
+                        'accent-light': '#D4B578',
+                        sand: '#F3F0EB',
+                        'gray-olive': '#9BA39C',
+                        'gray-charcoal': '#1E1E1E'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-white">
+
+    <!-- Header/Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300" id="header">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center space-x-3">
+                    <img src="../images/logo.png" alt="CGCM Logo" class="h-12 md:h-16 w-auto">
+                </a>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden lg:flex space-x-8 items-center">
+                    <li><a href="../index.html" class="text-gray-charcoal hover:text-accent font-medium transition-colors">Inicio</a></li>
+                    <li><a href="../quienes-somos/" class="text-accent font-semibold transition-colors">Quiénes Somos</a></li>
+                    <li><a href="../contacto/" class="text-gray-charcoal hover:text-accent font-medium transition-colors">Contacto</a></li>
+                    <li><a href="../preguntas-frecuentes/" class="text-gray-charcoal hover:text-accent font-medium transition-colors">FAQ</a></li>
+                    <li><a href="../registro/" class="bg-accent text-white px-6 py-3 rounded-full hover:bg-accent-light transition-all duration-300 font-semibold shadow-lg hover:shadow-xl">Afiliarme</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-gray-charcoal text-2xl focus:outline-none" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="hidden lg:hidden mt-4 pb-4" id="mobile-menu">
+                <ul class="flex flex-col space-y-4">
+                    <li><a href="../index.html" class="text-gray-charcoal hover:text-accent font-medium transition-colors block">Inicio</a></li>
+                    <li><a href="../quienes-somos/" class="text-accent font-semibold transition-colors block">Quiénes Somos</a></li>
+                    <li><a href="../contacto/" class="text-gray-charcoal hover:text-accent font-medium transition-colors block">Contacto</a></li>
+                    <li><a href="../preguntas-frecuentes/" class="text-gray-charcoal hover:text-accent font-medium transition-colors block">FAQ</a></li>
+                    <li><a href="../registro/" class="bg-accent text-white px-6 py-3 rounded-full hover:bg-accent-light transition-all duration-300 font-semibold text-center block">Afiliarme</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 flex items-center justify-center overflow-hidden mt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="../images/whoarewe.jpg" alt="Quiénes Somos" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70"></div>
+        </div>
+
+        <div class="container mx-auto px-4 z-10 text-center text-white" data-aos="fade-up">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">¿Quiénes Somos?</h1>
+            <p class="text-xl md:text-2xl text-accent-light">La fuerza que impulsa la gastronomía de Venezuela</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Somos la fuerza que impulsa la gastronomía de la Gran Caracas y Miranda</h2>
+                <p class="text-xl text-gray-olive leading-relaxed">Como pilar fundamental y socio estratégico del sector gastronómico, trabajamos incansablemente para fortalecer, innovar y elevar los estándares de la industria culinaria en nuestra región.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Carousel Section -->
+    <section class="py-10 bg-sand">
+        <div class="container mx-auto px-4">
+            <div class="swiper mySwiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../images/team-4529717_1280.jpg" alt="Equipo" class="w-full h-96 object-cover rounded-2xl">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/hands-8062985_1280.jpg" alt="Colaboración" class="w-full h-96 object-cover rounded-2xl">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/meet-696077_1280.jpg" alt="Reunión" class="w-full h-96 object-cover rounded-2xl">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/chef.jpg" alt="Chef" class="w-full h-96 object-cover rounded-2xl">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/pizza-6478478_1280.jpg" alt="Gastronomía" class="w-full h-96 object-cover rounded-2xl">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purpose Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Nuestro Propósito</h2>
+                    <p class="text-2xl text-accent font-semibold">El "Por Qué"</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center p-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-accent/20 rounded-full flex items-center justify-center">
+                            <i class="fas fa-rocket text-accent text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Transformar</h3>
+                        <p class="text-gray-olive">Transformar y fortalecer la gastronomía regional y nacional</p>
+                    </div>
+
+                    <div class="text-center p-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-accent/20 rounded-full flex items-center justify-center">
+                            <i class="fas fa-users text-accent text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Colaborar</h3>
+                        <p class="text-gray-olive">El poder de la colaboración entre profesionales del sector</p>
+                    </div>
+
+                    <div class="text-center p-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-accent/20 rounded-full flex items-center justify-center">
+                            <i class="fas fa-star text-accent text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Consolidar</h3>
+                        <p class="text-gray-olive">Consolidar una identidad culinaria única y auténtica</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Pillars Section -->
+    <section class="py-20 bg-sand">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Nuestra Acción</h2>
+                    <p class="text-2xl text-accent font-semibold">El "Cómo" y "Qué"</p>
+                </div>
+
+                <!-- Pillar 1 -->
+                <div class="mb-12 bg-white rounded-2xl overflow-hidden shadow-xl" data-aos="fade-right">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="p-8 lg:p-12 flex flex-col justify-center">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-chart-line text-white text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-primary">Impulsamos el Crecimiento</h3>
+                            </div>
+                            <ul class="space-y-4 text-gray-olive">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                    <span>Herramientas prácticas para el desarrollo de tu negocio</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                    <span>Formación continua y actualizada para profesionales</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                    <span>Conexiones de valor con actores clave del sector</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                    <span>Oportunidades de negocio y expansión</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="h-64 lg:h-auto">
+                            <img src="../images/man-2367954_1280.jpg" alt="Crecimiento" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="mb-12 bg-white rounded-2xl overflow-hidden shadow-xl" data-aos="fade-left">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="h-64 lg:h-auto order-2 lg:order-1">
+                            <img src="../images/team-4529717_1280.jpg" alt="Comunidad" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8 lg:p-12 flex flex-col justify-center order-1 lg:order-2">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-handshake text-white text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-primary">Fortalecer la Comunidad</h3>
+                            </div>
+                            <ul class="space-y-4 text-gray-olive">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                    <span>Promover la colaboración e innovación entre miembros</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                    <span>Conectar emprendedores, chefs y productores locales</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                    <span>Crear una red de apoyo sólida y comprometida</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl" data-aos="fade-right">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="p-8 lg:p-12 flex flex-col justify-center">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-shield-alt text-white text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-primary">Defender y Elevar los Estándares</h3>
+                            </div>
+                            <ul class="space-y-4 text-gray-olive">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                    <span>Representación ante autoridades y organismos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                    <span>Defender los intereses del sector gastronómico</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                                    <span>Promover altos estándares de calidad y excelencia</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="h-64 lg:h-auto">
+                            <img src="../images/wine-850337_1280.jpg" alt="Estándares" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Únete a Nuestra Comunidad</h2>
+            <p class="text-xl mb-10 text-accent-light max-w-3xl mx-auto">Forma parte de la red gastronómica más importante de Caracas y Miranda</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="../registro/" class="bg-accent text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-accent-light transition-all duration-300 inline-block">Afiliarme Ahora</a>
+                <a href="../contacto/" class="border-2 border-white text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300 inline-block">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-charcoal text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Logo & Info -->
+                <div>
+                    <img src="../images/logo-footer.png" alt="CGCM Logo" class="h-16 mb-4">
+                    <p class="text-gray-olive mb-4">Impulsamos la gastronomía de Caracas y Miranda con innovación y excelencia.</p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-accent">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-olive hover:text-accent transition-colors">Inicio</a></li>
+                        <li><a href="../quienes-somos/" class="text-gray-olive hover:text-accent transition-colors">Quiénes Somos</a></li>
+                        <li><a href="../contacto/" class="text-gray-olive hover:text-accent transition-colors">Contacto</a></li>
+                        <li><a href="../preguntas-frecuentes/" class="text-gray-olive hover:text-accent transition-colors">Preguntas Frecuentes</a></li>
+                        <li><a href="../registro/" class="text-gray-olive hover:text-accent transition-colors">Afiliarme</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-accent">Contacto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-olive">Altamira 23, Caracas, Distrito Capital, Venezuela</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-accent mr-3"></i>
+                            <span class="text-gray-olive">0412-222-222</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock text-accent mr-3"></i>
+                            <span class="text-gray-olive">Lun-Vier: 9:00 am - 4:00 pm</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-accent">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-light transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-light transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-light transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-light transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-olive/30 pt-8 text-center">
+                <p class="text-gray-olive">&copy; <span id="year"></span> Cámara Gastronómica de Caracas Miranda - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="../script.js"></script>
+</body>
+</html>
