@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Regístrate en la Cámara Gastronómica de Caracas Miranda">
+    <title>Registro - CGCM</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D2B25',
+                        secondary: '#2E4F46',
+                        accent: '#C6A15B',
+                        'accent-light': '#D4B578',
+                        sand: '#F3F0EB',
+                        'gray-olive': '#9BA39C',
+                        'gray-charcoal': '#1E1E1E'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-white">
+
+    <!-- Header/Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300" id="header">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center space-x-3">
+                    <img src="../images/logo.png" alt="CGCM Logo" class="h-12 md:h-16 w-auto">
+                </a>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden lg:flex space-x-8 items-center">
+                    <li><a href="../index.html" class="text-gray-charcoal hover:text-accent font-medium transition-colors">Inicio</a></li>
+                    <li><a href="../quienes-somos/" class="text-gray-charcoal hover:text-accent font-medium transition-colors">Quiénes Somos</a></li>
+                    <li><a href="../contacto/" class="text-gray-charcoal hover:text-accent font-medium transition-colors">Contacto</a></li>
+                    <li><a href="../preguntas-frecuentes/" class="text-gray-charcoal hover:text-accent font-medium transition-colors">FAQ</a></li>
+                    <li><a href="../registro/" class="bg-accent text-white px-6 py-3 rounded-full hover:bg-accent-light transition-all duration-300 font-semibold shadow-lg hover:shadow-xl">Afiliarme</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-gray-charcoal text-2xl focus:outline-none" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="hidden lg:hidden mt-4 pb-4" id="mobile-menu">
+                <ul class="flex flex-col space-y-4">
+                    <li><a href="../index.html" class="text-gray-charcoal hover:text-accent font-medium transition-colors block">Inicio</a></li>
+                    <li><a href="../quienes-somos/" class="text-gray-charcoal hover:text-accent font-medium transition-colors block">Quiénes Somos</a></li>
+                    <li><a href="../contacto/" class="text-gray-charcoal hover:text-accent font-medium transition-colors block">Contacto</a></li>
+                    <li><a href="../preguntas-frecuentes/" class="text-gray-charcoal hover:text-accent font-medium transition-colors block">FAQ</a></li>
+                    <li><a href="../registro/" class="bg-accent text-white px-6 py-3 rounded-full hover:bg-accent-light transition-all duration-300 font-semibold text-center block">Afiliarme</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 flex items-center justify-center overflow-hidden mt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="../images/hands-8062985_1280.jpg" alt="Registro" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70"></div>
+        </div>
+
+        <div class="container mx-auto px-4 z-10 text-center text-white" data-aos="fade-up">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">¿Cómo afiliarte a nosotros?</h1>
+            <p class="text-xl md:text-2xl text-accent-light">Únete a la red gastronómica más importante de Venezuela</p>
+        </div>
+    </section>
+
+    <!-- Information Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto" data-aos="fade-up">
+                <div class="bg-sand p-8 rounded-2xl mb-12">
+                    <h2 class="text-3xl font-bold text-primary mb-6 text-center">Información de Afiliación</h2>
+                    <div class="space-y-4 text-gray-olive">
+                        <p class="text-lg leading-relaxed">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            Para afiliarte a la Cámara Gastronómica de Caracas Miranda, necesitas completar el formulario de registro con la información de tu negocio.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            <i class="fas fa-dollar-sign text-accent mr-2"></i>
+                            <strong class="text-primary">Cuota mensual:</strong> $30 USD a la tasa del Banco Central de Venezuela
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            <i class="fas fa-credit-card text-accent mr-2"></i>
+                            <strong class="text-primary">Métodos de pago disponibles:</strong> Transferencia bancaria, Pago Móvil, Zelle
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            <i class="fas fa-file-upload text-accent mr-2"></i>
+                            Necesitarás adjuntar el RIF de tu negocio y el comprobante de pago en formato PNG o JPEG
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="py-16 bg-sand">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+
+                <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-3 text-center">Registra tu negocio</h2>
+                    <p class="text-gray-olive text-center mb-10">Completa el siguiente formulario para iniciar el proceso de afiliación</p>
+
+                    <form action="https://formsubmit.co/vicepresidenciacgcm@gmail.com" method="POST" enctype="multipart/form-data" class="space-y-6">
+
+                        <!-- Hidden fields for FormSubmit -->
+                        <input type="hidden" name="_next" value="../gracias/">
+                        <input type="hidden" name="_subject" value="Nueva Solicitud de Afiliación - CGCM">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <!-- Nombre del propietario -->
+                        <div>
+                            <label for="nombre-propietario" class="block text-gray-charcoal font-semibold mb-2">
+                                Nombre del Propietario <span class="text-accent">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="nombre-propietario"
+                                name="nombre_propietario"
+                                required
+                                class="w-full px-4 py-3 border border-gray-olive/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent transition-all"
+                                placeholder="Ej: Juan Pérez">
+                        </div>
+
+                        <!-- Correo electrónico personal -->
+                        <div>
+                            <label for="email-personal" class="block text-gray-charcoal font-semibold mb-2">
+                                Correo Electrónico Personal <span class="text-accent">*</span>
+                            </label>
+                            <input
+                                type="email"
+                                id="email-personal"
+                                name="email_personal"
+                                required
+                                class="w-full px-4 py-3 border border-gray-olive/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent transition-all"
+                                placeholder="ejemplo@correo.com">
+                        </div>
+
+                        <!-- Fecha de creación del negocio -->
+                        <div>
+                            <label for="fecha-creacion" class="block text-gray-charcoal font-semibold mb-2">
+                                Fecha de Creación del Negocio <span class="text-accent">*</span>
+                            </label>
+                            <input
+                                type="date"
+                                id="fecha-creacion"
+                                name="fecha_creacion"
+                                required
+                                class="w-full px-4 py-3 border border-gray-olive/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent transition-all">
+                        </div>
+
+                        <!-- Nombre del negocio -->
+                        <div>
+                            <label for="nombre-negocio" class="block text-gray-charcoal font-semibold mb-2">
+                                Nombre del Negocio
+                            </label>
+                            <input
+                                type="text"
+                                id="nombre-negocio"
+                                name="nombre_negocio"
+                                class="w-full px-4 py-3 border border-gray-olive/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent transition-all"
+                                placeholder="Ej: Restaurante El Buen Sabor">
+                        </div>
+
+                        <!-- RIF del negocio -->
+                        <div>
+                            <label for="rif-negocio" class="block text-gray-charcoal font-semibold mb-2">
+                                RIF del Negocio (PNG/JPEG) <span class="text-accent">*</span>
+                            </label>
+                            <div class="relative">
+                                <input
+                                    type="file"
+                                    id="rif-negocio"
+                                    name="rif_negocio"
+                                    accept=".png,.jpg,.jpeg"
+                                    required
+                                    class="w-full px-4 py-3 border border-gray-olive/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent transition-all file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-accent file:text-white hover:file:bg-accent-light">
+                                <p class="text-sm text-gray-olive mt-2">
+                                    <i class="fas fa-info-circle mr-1"></i>
+                                    Formatos permitidos: PNG, JPEG. Tamaño máximo: 5MB
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Comprobante de pago -->
+                        <div>
+                            <label for="comprobante-pago" class="block text-gray-charcoal font-semibold mb-2">
+                                Comprobante de Pago (PNG/JPEG) <span class="text-accent">*</span>
+                            </label>
+                            <div class="relative">
+                                <input
+                                    type="file"
+                                    id="comprobante-pago"
+                                    name="comprobante_pago"
+                                    accept=".png,.jpg,.jpeg"
+                                    required
+                                    class="w-full px-4 py-3 border border-gray-olive/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent transition-all file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-accent file:text-white hover:file:bg-accent-light">
+                                <p class="text-sm text-gray-olive mt-2">
+                                    <i class="fas fa-info-circle mr-1"></i>
+                                    Formatos permitidos: PNG, JPEG. Tamaño máximo: 5MB
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="pt-4">
+                            <button
+                                type="submit"
+                                class="w-full bg-accent text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-accent-light transition-all duration-300 shadow-lg hover:shadow-xl">
+                                Enviar Solicitud <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </div>
+
+                        <p class="text-center text-sm text-gray-olive mt-6">
+                            <i class="fas fa-lock mr-1"></i>
+                            Tus datos están seguros con nosotros
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-12 text-center" data-aos="fade-up">
+                    Beneficios de Ser Miembro
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-sand p-6 rounded-xl hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-graduation-cap text-accent text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Formación Continua</h3>
+                        <p class="text-gray-olive">Acceso a cursos y talleres especializados</p>
+                    </div>
+
+                    <div class="bg-sand p-6 rounded-xl hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-network-wired text-accent text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Networking</h3>
+                        <p class="text-gray-olive">Conexión con 700+ establecimientos</p>
+                    </div>
+
+                    <div class="bg-sand p-6 rounded-xl hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-balance-scale text-accent text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Respaldo Legal</h3>
+                        <p class="text-gray-olive">Asesoría y representación ante autoridades</p>
+                    </div>
+
+                    <div class="bg-sand p-6 rounded-xl hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-calendar-alt text-accent text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Eventos Exclusivos</h3>
+                        <p class="text-gray-olive">Participación en ferias y encuentros</p>
+                    </div>
+
+                    <div class="bg-sand p-6 rounded-xl hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-truck text-accent text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Proveedores</h3>
+                        <p class="text-gray-olive">Acceso a mejores precios y calidad</p>
+                    </div>
+
+                    <div class="bg-sand p-6 rounded-xl hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-certificate text-accent text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Certificaciones</h3>
+                        <p class="text-gray-olive">Reconocimiento y validación oficial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-charcoal text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Logo & Info -->
+                <div>
+                    <img src="../images/logo-footer.png" alt="CGCM Logo" class="h-16 mb-4">
+                    <p class="text-gray-olive mb-4">Impulsamos la gastronomía de Caracas y Miranda con innovación y excelencia.</p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-accent">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-olive hover:text-accent transition-colors">Inicio</a></li>
+                        <li><a href="../quienes-somos/" class="text-gray-olive hover:text-accent transition-colors">Quiénes Somos</a></li>
+                        <li><a href="../contacto/" class="text-gray-olive hover:text-accent transition-colors">Contacto</a></li>
+                        <li><a href="../preguntas-frecuentes/" class="text-gray-olive hover:text-accent transition-colors">Preguntas Frecuentes</a></li>
+                        <li><a href="../registro/" class="text-gray-olive hover:text-accent transition-colors">Afiliarme</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-accent">Contacto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-olive">Altamira 23, Caracas, Distrito Capital, Venezuela</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-accent mr-3"></i>
+                            <span class="text-gray-olive">0412-222-222</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock text-accent mr-3"></i>
+                            <span class="text-gray-olive">Lun-Vier: 9:00 am - 4:00 pm</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-accent">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-light transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-light transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-light transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-light transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-olive/30 pt-8 text-center">
+                <p class="text-gray-olive">&copy; <span id="year"></span> Cámara Gastronómica de Caracas Miranda - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="../script.js"></script>
+</body>
+</html>
