@@ -94,13 +94,13 @@ body {
 .swiper-pagination-bullet {
     background: var(--accent) !important;
     opacity: 0.5;
-    transform: translateY(16px);
+    transform: translateY(10px);
 }
 
 .swiper-pagination-bullet-active {
     opacity: 1 !important;
     transform: scale(1.2);
-    transform: translateY(15px);
+    transform: translateY(10px);
 }
 
 .swiper-button-next,
