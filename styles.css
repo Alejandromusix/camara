@@ -105,12 +105,12 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: var(--accent) !important;
+    color: var(--accent-light) !important;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    color: var(--accent-light) !important;
+    color: var(--accent) !important;
 }
 
 /* ============ FAQ Accordion ============ */

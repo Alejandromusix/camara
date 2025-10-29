@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cámara Gastronómica de Caracas Miranda - Representamos a más de 700 establecimientos gastronómicos">
     <title>Cámara Gastronómica de Caracas y Miranda</title>
-
+    <!--Swipper css-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -147,7 +151,29 @@
             </div>
         </div>
     </section>
-
+    <section class="py-10 bg-sand">
+        <div class="container mx-auto px-4">
+        <div class="swiper mySwiper" data-aos="fade-up">
+            <h1 class="text-center font-bold text-5xl text-primary p-4">Patrocinantes</h1>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../images/team-4529717_1280.jpg" alt="Equipo" class="w-full h-96 object-cover rounded-2xl">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/hands-8062985_1280.jpg" alt="Colaboración" class="w-full h-96 object-cover rounded-2xl">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/hands-8062985_1280.jpg" alt="Colaboración" class="w-full h-96 object-cover rounded-2xl">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/hands-8062985_1280.jpg" alt="Colaboración" class="w-full h-96 object-cover rounded-2xl">
+                    </div>
+                </div>
+                <div class="swiper-button-next font-bold translate-y-5"></div>
+                <div class="swiper-button-prev font-bold translate-y-5"></div>
+            </div>
+        </div>
+    </section>
     <!-- Services Section -->
     <section class="py-20 bg-sand">
         <div class="container mx-auto px-4">
@@ -196,7 +222,7 @@
                     <div class="p-8">
                         <h3 class="text-2xl font-bold text-primary mb-4">Patrocinantes</h3>
                         <p class="text-gray-olive mb-6">Conoce nuestros patrocinantes y afiliados.</p>
-                        <a href="#" class="text-accent font-semibold hover:text-accent-light transition-colors inline-flex items-center">
+                        <a href="/sponsors/index.html" class="text-accent font-semibold hover:text-accent-light transition-colors inline-flex items-center">
                             Conocer más <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -267,7 +293,7 @@
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Mantente Informado</h2>
-                <p class="text-xl mb-10 text-accent-light">Recibe las últimas noticias, eventos y oportunidades del sector gastronómico</p>
+                <p class="text-xl mb-10 text-white">Recibe las últimas noticias, eventos y oportunidades del sector gastronómico</p>
 
                 <form class="flex flex-col sm:flex-row gap-4 mb-10 max-w-2xl mx-auto" action="https://formsubmit.co/vicepresidenciacgcm@gmail.com" method="POST">
                     <input type="email" name="email" placeholder="Tu correo electrónico" required class="flex-1 px-6 py-4 rounded-full text-gray-charcoal focus:outline-none focus:ring-2 focus:ring-accent">
@@ -351,7 +377,8 @@
 
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <!--Swiper Js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
