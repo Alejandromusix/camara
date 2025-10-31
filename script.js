@@ -485,3 +485,43 @@ window.CGCMApp = {
     throttle,
     isInViewport
 };
+
+// ============== Form backend preparation
+
+const submitBtn = document.getElementById('.submit')
+
+submitBtn.addEventListener('click', async (e) => {
+e.preventDefault()
+
+const nameInput = document.getElementById('.nombre')
+const emailInput = document.getElementById('.email')
+const messageInput = document.getElementById('.mensaje')
+
+const name = nameInput.value.trim();
+const email = emailInput.value.trim();
+const message = messageInput.value.trim();
+
+const apiUrl = 'http://localhost:5000/api/contact'
+const formData = { name, email, message};
+
+try {
+    const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type' : 'application/json'},
+        body: JSON.stringify(formData),
+    })
+    if (response.ok){
+        alert('Mensaje enviado correctamente')
+
+        nameInput.value = '';
+        emailInput.value = '';
+        messageInput.value = '';
+    } else {
+        const error = await response.json;
+        alert(`No se ha podido enviar el mensaje: ${error.message || 'Error desconocido'}`)
+    }
+}
+catch(error) {
+    alert(`Ha ocurrido un error: ${error.message}`)
+}
+})

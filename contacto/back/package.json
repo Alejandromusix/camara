@@ -1,0 +1,30 @@
+{
+  "name": "camara-de-chefs",
+  "version": "1.0.0",
+  "description": "Sitio web oficial de la Cámara Gastronómica de Caracas Miranda - Organización que representa a más de 700 establecimientos gastronómicos en Caracas y Miranda, Venezuela.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --watch public --watch server.js --ext js, html, css",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejandromusix/Camara-de-Chefs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Alejandromusix/Camara-de-Chefs/issues"
+  },
+  "homepage": "https://github.com/Alejandromusix/Camara-de-Chefs#readme",
+  "dependencies": {
+    "deep-email-validator": "^0.1.21",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
